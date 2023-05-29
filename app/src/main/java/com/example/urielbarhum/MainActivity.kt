@@ -45,9 +45,12 @@ class MainActivity : ComponentActivity() {
             textInput.text = mailInput.text
 
             if (mailInput.text.toString().length < 5 && mailInput.text.contains('@')
-                && textpasword.text.length < 8
-            ){
-
+                && textpasword.text.length < 8 && textpasword.text.contains('@'))
+            {
+                printt.text = "your are succses"
+            }
+            else{
+                printt.text = "not good"
             }
         }
     }
